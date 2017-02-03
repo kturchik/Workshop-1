@@ -56,16 +56,17 @@ From the Hierarchy select the hole and drag it to the Prefabs folder as well (it
 CHECKPOINT - Select the Play button, you should now see our holes randomly spawning moles
 
 Select the mole in the Prefabs folder and drag it back to our scenes folder (told you :) )
-	Click on Add Component and search for the "Mole" script
-	Click on the script to add it to the mole
+	Click on Add Component and search for the "Mole" script, click on the script to add it to the mole
 	Click on Add Component again and search for "Box Collider 2D"
 	Click on the add the Box Collider (make sure it's the 2D one) to the mole
 	Change the Offset of the Box Collider to -1 and the size to 2 x 2
+ADDENDUM: THIS IS WHAT WAS CAUSING THE BUG DURING THE WORKSHOP!
+	--> Check the Is Trigger box (this sets the collider as a trigger instead of a physics collider)
 	Go to the top of the Inspector and make sure you press Apply to change the Prefab
 	Delete the mole from the scene again ( goodbye mole! Q.Q)
 
-Now go back to the resources folder and select the mole animation (the icon with the play button)
-	Click on it and uncheck Loop Time
+In the resources folder, select the mole animation (the icon with the play button)
+	Click on it and uncheck Loop Time (This ensures that the animation plays only once)
 
 Now select the mole controller (the icon with the shapes)
 	You'll see an orange box, which is our mole animation, click on it and change it's name to "spawn" (at the top of the inspector, press enter to save the new name)
@@ -79,4 +80,25 @@ Go back to the Prefabs folder
 
 CHECKPOINT - Select the Play button, our moles should now smoothly spawn and retreat back into their holes
 	     We should also be able to click on our moles to make them turn red
-	
+
+ADDENDUM:
+--Post Workshop Practice--
+Right click somewhere in the Hierarchy, create a Text Field for the score by going to UI --> Text
+	Double click on the newly created canvas to align the camera with the UI canvas (it has huge dimensions but shrinks to the size of the camera when we run the game)
+	Click on the Text box and drag it to the top left corner of the canvas (Or set the position to (-260, 170, 0))
+	Rename the Text box in the Inspector to Score
+	Go to the Text script component in the Inspector and change the Font Style to Bold and the Font Size to 20
+	In the Text field replace "New Text" with "Score: "
+	Click on Add Component and search for the "Score" script, click on the script to add it to the text box
+
+Create a duplicate of the Score text box by right clicking on it or selecting it a pressing Control + D
+	Rename the duplicate to Timer
+	Reposition the Timer text box to the right side of the screen (Try the position (260, 170, 0))
+	In the Text field replace "Score : " with "Timer: "
+	Click on Add Component and search for the "Timer" script, click on the script to add it to the text box
+
+Check out the comments in each of the scripts to find out what every line of code does
+
+--Done--
+Enjoy the game!!!
+Happy Groundhogs Day! :)

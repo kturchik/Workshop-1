@@ -52,10 +52,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b2f7bac0abda84abbc19371c8e9a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mole: {fileID: 111180, guid: 8aee9805a99977f489b2ee3a0412b24c, type: 2}
-  aliveTime: 5
-  intervalMin: 5
-  intervalMax: 20
+  mole: {fileID: 1668699834095940, guid: 557489f3e514ee54db7114498ff1f195, type: 2}
+  aliveTime: 3
+  intervalMin: 3
+  intervalMax: 12
 --- !u!212 &212663938158688938
 SpriteRenderer:
   m_ObjectHideFlags: 1
